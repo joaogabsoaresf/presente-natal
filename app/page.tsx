@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
-import Roulette from '@/components/roulette'
-import ReactConfetti from 'react-confetti';
+import dynamic from 'next/dynamic';
+
+const Roulette = dynamic(() => import('@/components/roulette'))
+const ReactConfetti = dynamic(() => import('react-confetti'), { ssr: false });
 
 export default function ChristmasGift() {
   const [isOpen, setIsOpen] = useState(false)
