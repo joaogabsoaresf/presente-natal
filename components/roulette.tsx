@@ -42,7 +42,7 @@ export default function Roulette({ setShowConfetti }: { setShowConfetti: (show: 
 
   return (
     <>
-      <div style={{ textAlign: 'center', fontFamily: "'Comic Sans MS', cursive, sans-serif" }}>
+      <div style={{ textAlign: 'center' }}>
         <h1 style={{ color: '#333', marginBottom: '20px' }}>🎡 Descubra o presente! 🎉</h1>
         <Wheel
           mustStartSpinning={mustSpin}
